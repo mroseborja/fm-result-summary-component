@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* hanken-grotesk-500 */
+  @font-face {
+    font-display: swap;
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./assets/fonts/hanken-grotesk-500.woff2") format("woff2");
+  }
+  /* hanken-grotesk-700 */
+  @font-face {
+    font-display: swap;
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/hanken-grotesk-700.woff2") format("woff2");
+  }
+  /* hanken-grotesk-800 */
+  @font-face {
+    font-display: swap;
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 800;
+    src: url("./assets/fonts/hanken-grotesk-800.woff2") format("woff2");
+  }
+
+  :root {
+    --clr-light-red: 0 100% 67%;
+    --clr-orange-yellow: 39 100% 56%;
+    --clr-green-teal: 166 100% 37%;
+    --clr-cobalt-blue: 234 85% 45%;
+
+    --clr-slate-blue: 252 100% 67%;
+    --clr-royal-blue: 241 81% 54%;
+    --clr-violet-blue: 256 72% 46%;
+    --clr-persian-blue: 241 72% 46%;
+
+    --clr-pale-blue: 221 100% 96%;
+    --clr-lavender: 241 100% 89%;
+    --clr-gray-blue: 224 30% 27%;
+  }
+}
