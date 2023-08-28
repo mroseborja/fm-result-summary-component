@@ -8,14 +8,14 @@ const CategoryItem = ({ data, color }) => {
 
   return (
     <div
-      className={`flex items-center ${colorVariants[color].bg} my-4 rounded-md p-3 md:my-3.5`}
+      className={`flex items-center ${colorVariants[color].bg} gap-3 rounded-md p-3`}
     >
-      <img src={data.icon} className="h-min w-min px-2 md:px-1" alt="" />
+      <img src={data.icon} className="h-min w-min" alt="" />
       <div className="flex w-full justify-between px-2 md:px-1">
-        <h3 className={`${colorVariants[color].text} text-sm font-medium`}>
+        <h3 className={`${colorVariants[color].text} font-medium`}>
           {data.category}
         </h3>
-        <p className="text-sm font-extrabold text-gray-blue/50">
+        <p className="font-extrabold text-gray-blue/50">
           <span className="pr-1 text-gray-blue">{data.score} </span> / 100
         </p>
       </div>
